@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Bijour</title>
+  </head>
+  <body onload="load()">
+    <h1>Ramenez la coupe à la maison</h1>
+    <div>
+
+        <label for="title">Titre du questionnaire</label>
+        <input id="title" placeholder="Titre" />
+        </br>
+
+        <button onclick="saveQuestionnaireTitle()">Sauvegarder le titre</button>
+
+        <div class="parent">
+            <div class="child">
+                <div class="child2">
+                   <h3>Nouvelle question</h3>
+                    <input id="questionTitle" class="mt-10" placeholder="Name" />
+                    <select id="selectTypeField" class="mt-10" name="option">
+                        <option value="" disabled selected>Type de champs</option>
+                        <option value="1">Input Text</option>
+                        <option value="2">Text Area</option>
+                        <option value="3">Checkbox</option>
+                        <option value="4">Select</option>
+                        <option value="5">Radio</option>
+                    </select>
+
+                    <!-- Checkbox -->
+                    <div id="type-3" class="hide">
+                        <div id="checkboxContainer" class="mt-10">
+                            <textarea id="checkboxContent" placeholder="..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Select -->
+                    <div id="type-4" class="hide">
+                        <div id="optionsContainer" class="mt-10">
+                            <textarea id="optionsContent" placeholder="..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Radio -->
+                    <div id="type-5" class="hide">
+                        <div id="radioContainer" class="mt-10">
+                            <textarea id="radioContent" placeholder="..."></textarea>
+                        </div>
+                    </div>
+                    <button class="mt-10" type="button" onclick="addQuestion()">Enregistrer</button>
+                </div>
+            </div>
+            <div class="child">
+                <h2 id="titleQuestion"></h2>
+                <div id="preview" class="child2">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

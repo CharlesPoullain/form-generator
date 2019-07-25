@@ -1,0 +1,69 @@
+.parent {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.parent2 {
+}
+
+.child {
+  width: 45%;
+  box-shadow: 10px 10px 20px 0px rgba(187, 187, 187, 0.5294117647058824);
+  border-radius: 10px;
+}
+
+.child2 {
+  padding: 20px;
+}
+
+input {
+  border: 1px solid #ccc !important;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid #ccc !important;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+select {
+  border: 1px solid #ccc !important;
+  padding: 8px;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px !important;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #fff !important;
+  background-color: #960076 !important;
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: visible;
+}
